@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+    <title>Electric Line</title>
+</head>
+
+<body>
+    <h1 style="font-family: 'Roboto Slab'" align="center">Stumblers</h1>
+    <!-- Modal Popup -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">What do you mean by Transmission Lines?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The transmission line is the most crucial part of the power system. The requirement of power and its allegiance has grown up exponentially over the modern era, and the prominent role of a transmission line is to transmit electric power from the source area to the distribution network. The electrical power system consists of so many complex dynamic and interacting elements that are always prone to disturbance or an electrical fault.</p>
+                    <p>High-capacity electrical generating power plants and the grid concept, i.e., synchronized electrical power plants and geographical d displaced grids, required fault detection and operation of protection equipment in minimum possible time to remain stable. The faults on electrical power system transmission lines are supposed to be first detected and classified correctly and should be cleared in the least possible time. The protection system used for a transmission line can also initiate the other relays to protect the power system from outages. An exemplary fault detection system provides a practical, reliable, fast, and secure way of a relaying operation. The application of pattern recognition technology could help discriminate against faulty and healthy electrical power systems. It also enables us to differentiate among three phases of a three-phase power system experiencing a fault.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex justify-content-around w-100">
+            <button type="button" class="btn btn-info mt-4" data-toggle="modal" data-target="#imageModal">
+                Loss Curve
+            </button>
+
+            <!-- Image Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Loss Curve</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="static/images/LossCurves.jpg" alt="Popup Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-info mt-4" data-toggle="modal" data-target="#imageModal1">
+                Heat Map
+            </button>
+
+            <!-- Image Modal -->
+            <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Heat Map</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="static/images/HeatCurves.jpg" alt="Popup Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-info mt-4" data-toggle="modal" data-target="#imageModal2">
+                Hist Plot of Input Features
+            </button>
+
+            <!-- Image Modal -->
+            <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Hist Plot of Input Features</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="static/images/Hist_Inputs.jpg" alt="Popup Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-info mt-4" data-toggle="modal" data-target="#imageModal3">
+                Hist Plot of Output Features
+            </button>
+
+            <!-- Image Modal -->
+            <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">Hist Plot of Output Features</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="static/images/Hist_Outputs.jpg" alt="Popup Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5 animate__animated animate__bounceInDown">Electric Line Fault</h1>
+        <form id="inputForm" action="{{ url_for('predict')}}" method="post" class="form">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="input1">I<sub>A</sub></label>
+                        <input type="text" class="form-control" id="input1" name="input1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input2">I<sub>B</sub></label>
+                        <input type="text" class="form-control" id="input2" name="input2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input3">I<sub>C</sub></label>
+                        <input type="text" class="form-control" id="input3" name="input3" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="input4">V<sub>A</sub></label>
+                        <input type="text" class="form-control" id="input4" name="input4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input5">V<sub>B</sub></label>
+                        <input type="text" class="form-control" id="input5" name="input5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input6">V<sub>C</sub></label>
+                        <input type="text" class="form-control" id="input6" name="input6" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+
+        <div id="result" class="mt-4">
+            Result: {{ prediction_text }}
+        </div>
+
+        <div class="mt-4">
+            <a href="https://www.youtube.com" target="_blank" class="btn btn-danger">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.github.com" target="_blank" class="btn btn-dark ml-2">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to trigger the modal only if the cookie is not set
+        $(document).ready(function(){
+            if (!Cookies.get('welcomeModalShown')) {
+                $('#welcomeModal').modal('show');
+                Cookies.set('welcomeModalShown', 'true', { expires: 1 / 288, path: '/' }); // Cookie expires after 5 minutes (1/288 days)
+            }
+        });
+    </script>
+
+</body>
+
+</html>

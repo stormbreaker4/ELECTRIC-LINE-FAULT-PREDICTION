@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container,.navbar{
+    margin-top: 50px;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The rest of your styles... */
+
+h1 {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* The rest of your styles... */
+
+
+/* The rest of your styles... */
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.modal-title{
+    font-weight: 700;
+    color: black;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.modal-content{
+    width: 120%;
+    background-color: beige;
+
+}
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 1.5s ease-out;
+} */
